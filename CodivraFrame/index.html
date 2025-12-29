@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodivraFrame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">CodivraFrame</div>
+        </div>
+        <div class="nav-right">
+            <a href="#" >Home</a>
+            <a href="#" >About</a>
+            <a href="#" >Services</a>
+            <a href="#" >Contact Us</a>
+        </div>
+    </nav>
+    <!--main body-->
+    <main class="main-body">
+        <!--hero -->
+        <section class="hero">
+            <div class="hero-left">
+                <h1 class="brand-heading">
+                    CodivraFrame Layout generator
+                </h1>
+                <p class="brand-description">
+                    Build stunning business websites in minutes.
+Choose a layout, customize your brand, and export clean code instantly.
+                </p>
+            </div>
+            <div class="hero-right">
+                <img src="logo2.png" alt="codivraframe logo" class="hero-logo">
+            </div>
+        </section>
+        <!--form card-->
+        <section class="form-section">
+            <form id="formgenerator" class="form-card">
+                <div class="form-group">
+                    <label for="BrandName" class="form-label">Brand/Company Name</label>
+                    <input type="text" id="BrandName" class="form-input" placeholder="Enter Your brand/company Name" required data-testid="input-brandname">
+                </div>
+                <div class="form-group">
+                    <label for="businesstype" class="form-label">Business Type</label>
+                    <select  id="businesstype" class="form-select" required data-testid="select-businesstype">
+                        <option value="" disabled selected>Select Your Business Type</option>
+                        <option value="portfolio">Portfolio</option>
+                        
+                        <option value="cafe">Cafe</option>
+                        <option value="salon">Salon</option>
+                        <option value="local-business">Local Business</option>
+                        <option value="gym"> Gym</option>
+                        <option value="restaurent"> Restaurent</option>
+                    </select>
+                    
+
+
+
+                </div>
+                <!--color field-->
+                <div class="form-group">
+                    <label for="brandcolor" class="form-label">Brand Color</label>
+                    <div class="color-picker">
+                        <input type="color" id="brandcolor" class="form-color" value="#1e40af" data-testid="input-color">
+                        <span class="color-label">(Default)</span>
+                    </div>
+                </div>
+                <!--submitt button-->
+                <button  id="generateBtn" type="button" >Generate Layout</button>
+                <div id="generator-output"></div>
+
+            </form>
+        </section>
+    </main>
+    <!--footer-->
+    
+
+    <footer class="footer">
+        
+
+        <p>&copy; 2025 CodivraFrame. All rights reserved</p>
+    </footer>
+    <div id="generator-output"></div>
+
+    <!--loading overlat-->
+    <div id="loadingoverlay" class="loading-overlay-hidden">
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <p id="loadingText" class="loading-text">Creating Layout...</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+
+<div id="downloadPopup" style="
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+">
+  <div style="
+    background:#111;
+    color:#fff;
+    padding:24px 32px;
+    border-radius:12px;
+    max-width:360px;
+    text-align:center;
+  ">
+    <p style="margin-bottom:16px;">
+      Do you want to download the code files for further editing?
+    </p>
+
+    <button id="confirmDownload">Yes, Download</button>
+    <button id="cancelDownload" style="margin-left:12px;">Cancel</button>
+  </div>
+</div>
+
+</body>
+</html>
