@@ -1,16 +1,36 @@
-# React + Vite
+# Portfolio | Python & AI Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high‑performance portfolio built with React and Tailwind CSS, featuring a custom VS‑Code‑inspired code background that highlights Python and AI engineering projects.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Clean, professional design** – White background with vibrant, VS‑Code‑style syntax‑highlighted code.
+- **Fully responsive** – Optimized for mobile, tablet, and desktop.
+- **Smooth animations** – Powered by Framer Motion.
+- **Interactive components** – Navbar with mobile menu, skill bars, project cards, and contact section.
+- **Subtle AI/ML background** – Static Python/ML code lines (keywords, strings, numbers) that evoke a developer workspace.
+- **Optimized performance** – Built with Vite for fast development and production builds.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React** – UI library
+- **Vite** – Build tool and development server
+- **Tailwind CSS** – Utility‑first styling
+- **Framer Motion** – Animations
+- **React Icons** – Icon set
+- **React Intersection Observer** – Scroll‑triggered animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/poonia-98/Portfolio.git
+   cd Portfolio
